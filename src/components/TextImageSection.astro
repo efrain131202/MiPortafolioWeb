@@ -1,0 +1,63 @@
+<section class="text-image-section">
+    <div class="content">
+        <div class="text">
+            <h1>Bienvenido a mi portafolio</h1>
+            <p>
+                Soy Efrain Cruz Lobato, estudiante de la Universidad Tecnológica
+                de Tlaxcala de la carrera de Desarrollo y Gestión de Software.
+                En este portafolio, encontrarás información sobre mi experiencia
+                y conocimientos.
+            </p>
+        </div>
+        <div class="image">
+            <img
+                src="public/color-scheme-right.svg"
+                alt="Descripción de la imagen"
+            />
+        </div>
+    </div>
+</section>
+
+<style>
+    .text-image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    .image {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        text-align: center;
+    }
+    .image img {
+        max-width: 100%;
+        height: auto;
+        padding-right: 50px;
+    }
+    @media (min-width: 768px) {
+        .content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .text,
+        .image {
+            text-align: left;
+        }
+    }
+</style>
