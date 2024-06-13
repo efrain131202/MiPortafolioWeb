@@ -1,3 +1,11 @@
+---
+document.addEventListener("DOMContentLoaded", (event) => {
+    document.getElementById("year").textContent = new Date()
+        .getFullYear()
+        .toString();
+});
+---
+
 <footer>
     <section class="redes-sociales">
         <div class="contenedor">
@@ -34,7 +42,6 @@
 <style>
     footer {
         color: white;
-        background-color: #25d366;
         padding: 20px 0;
     }
 
@@ -94,11 +101,3 @@
         }
     }
 </style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", (event) => {
-        document.getElementById("year").textContent = new Date()
-            .getFullYear()
-            .toString();
-    });
-</script>
