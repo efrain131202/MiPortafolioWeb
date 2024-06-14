@@ -8,6 +8,7 @@
                 y Gestión de Software. En este portafolio, encontrarás
                 información sobre mi experiencia y conocimientos.
             </p>
+            <button id="downloadCVBtn" class="download-button">Descargar CV</button>
         </div>
         <div class="image">
             <img src="/color-scheme-right.svg" alt="Descripción de la imagen" />
@@ -23,6 +24,24 @@
         padding: 20px;
         padding-top: 75px;
     }
+
+    .download-button {
+        display: inline-block;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+
+    .download-button:hover {
+        background-color: #a93a80;
+        transition: 0.3s;
+    }
+
     .content {
         display: flex;
         flex-direction: column;
@@ -64,3 +83,17 @@
         }
     }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById('downloadCVBtn');
+
+    downloadBtn.addEventListener('click', function(event) {
+        const downloadLink = "/components/CV_EfrainCruzLobato_2024.pdf";
+        window.location.href = downloadLink;
+
+        event.preventDefault();
+    });
+});
+
+</script>
