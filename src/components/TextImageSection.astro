@@ -35,6 +35,7 @@
         margin-top: 20px;
         transition: background-color 0.3s;
         cursor: pointer;
+		font-family: "Madimi One", sans-serif;
     }
 
     .download-button:hover {
@@ -89,7 +90,7 @@
     const downloadBtn = document.getElementById('downloadCVBtn');
 
     downloadBtn.addEventListener('click', function(event) {
-        const downloadLink = "/components/CV_EfrainCruzLobato_2024.pdf";
+        const downloadLink = "src/components/CV_EfrainCruzLobato_2024.pdf";
         window.location.href = downloadLink;
 
         event.preventDefault();
