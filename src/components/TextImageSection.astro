@@ -8,7 +8,7 @@
                 y Gestión de Software. En este portafolio, encontrarás
                 información sobre mi experiencia y conocimientos.
             </p>
-            <a href="src/components/CV_EfrainCruzLobato_2024.pdf" download id="downloadCVBtn">Descargar CV</a>
+            <a class="download-button" href="/CV_EfrainCruzLobato_2024.pdf" download id="downloadCVBtn">Descargar CV</a>
         </div>
         <div class="image">
             <img src="/color-scheme-right.svg" alt="Descripción de la imagen" />
@@ -90,7 +90,7 @@
     const downloadBtn = document.getElementById('downloadCVBtn');
   
     downloadBtn.addEventListener('click', function(event) {
-      const downloadLink = "src/components/CV_EfrainCruzLobato_2024.pdf";
+      const downloadLink = "/CV_EfrainCruzLobato_2024.pdf";
       window.location.href = downloadLink;
   
       event.preventDefault(); 
