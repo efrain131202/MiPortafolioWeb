@@ -1,114 +1,27 @@
-<section>
-    <div class="separador">
-        <h2>Extras:</h2>
-    </div>
+<section class="text-center text-white mt-12 mb-8">
+    <h2>Extras:</h2>
 </section>
-<section id="profile">
-    <div class="profile-item">
-        <h3>Educación</h3>
-        <p>
-            Universidad Tecnológica de Tlaxcala, Ingenieria en Desarrollo y
-            Gestión de Software.
-        </p>
+
+<section id="profile" class="max-w-4xl mx-auto p-5">
+    <div class="border-b border-white py-4">
+        <h3 class="text-[#a93a80] text-xl mb-2">Educación</h3>
+        <p class="text-white">Universidad Tecnológica de Tlaxcala, Ingeniería en Desarrollo y Gestión de Software.</p>
     </div>
-    <div class="profile-item">
-        <h3>Más Habilidades Técnicas</h3>
-        <div class="skills">
-            <div class="skill-card">
-                <i class="fas fa-search"></i>
+    <div class="border-b border-white py-4">
+        <h3 class="text-[#a93a80] text-xl mb-2">Más Habilidades Técnicas</h3>
+        <div class="flex flex-wrap justify-center gap-4 mt-5 mb-5">
+            <div class="border border-white rounded-lg p-5 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 text-center text-[#a93a80]">
+                <i class="fas fa-search text-white text-4xl mb-2"></i>
                 <h4>OSINT</h4>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-tools"></i>
+            <div class="border border-white rounded-lg p-5 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 text-center text-[#a93a80]">
+                <i class="fas fa-tools text-white text-4xl mb-2"></i>
                 <h4>Gestión de Software</h4>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
+            <div class="border border-white rounded-lg p-5 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 text-center text-[#a93a80]">
+                <i class="fas fa-database text-white text-4xl mb-2"></i>
                 <h4>Bases de Datos No Relacionales</h4>
             </div>
         </div>
     </div>
 </section>
-
-<style>
-    .separador {
-        text-align: center;
-        color: white;
-        margin-bottom: 30px;
-        margin-top: 50px;
-    }
-
-    #profile {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    .profile-item {
-        border-bottom: 1px solid white;
-        padding: 15px 0;
-    }
-
-    .profile-item h3 {
-        margin-top: 0;
-        color: #a93a80;
-    }
-
-    .profile-item p,
-    .profile-item ul {
-        margin: 5px 0;
-        color: white;
-    }
-
-    .profile-item ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .profile-item li {
-        padding: 5px 0;
-    }
-
-    .skills {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .skill-card {
-        border: 1px solid white;
-        border-radius: 10px;
-        padding: 20px;
-        width: 30%;
-        text-align: center;
-        color: #a93a80;
-        margin: 10px;
-    }
-
-    .skill-card i {
-        font-size: 50px;
-        margin-bottom: 10px;
-        color: white;
-    }
-
-    @media (max-width: 600px) {
-        #profile {
-            padding: 10px;
-        }
-
-        .profile-item {
-            padding: 10px 0;
-        }
-
-        .skills {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .skill-card {
-            width: 80%;
-            margin-bottom: 20px;
-        }
-    }
-</style>

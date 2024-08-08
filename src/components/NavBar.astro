@@ -1,73 +1,25 @@
-<nav>
+<nav class="fixed top-0 w-full h-20 bg-transparent backdrop-blur-lg z-50 flex items-center justify-between px-6">
   <label class="logo">
     <a href="#">
       <img
         src="/astronaut.svg"
-        height="70px"
-        width="60px"
+        height="70"
+        width="60"
         alt="Logo_Efrain"
-        class="logo-img"
+        class="pt-2 ml-4"
       />
     </a>
   </label>
-  <ul>
-    <li><a href="mailto:efraincruzlobato13@gmail.com">Gmail</a></li>
+  <ul class="flex items-center space-x-6 mr-6">
     <li>
-      <a href="https://github.com/efrain131202" target="_blank"
-        ><i class="fab fa-github"></i></a
-      >
+      <a href="mailto:efraincruzlobato13@gmail.com" class="text-white text-lg font-bold hover:text-[#a93a80] transition-colors duration-300">
+        Gmail
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/efrain131202" target="_blank" class="text-white text-xl hover:text-[#a93a80] transition-colors duration-300">
+        <i class="fab fa-github"></i>
+      </a>
     </li>
   </ul>
 </nav>
-
-<style>
-  * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-
-  nav {
-    margin-top: -10px;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    z-index: 1000;
-  }
-
-  .logo-img {
-    padding-top: 15px;
-    margin-left: 30px;
-  }
-
-  nav ul {
-    float: right;
-    margin-right: 20px;
-  }
-
-  nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 15px;
-  }
-
-  nav ul li a {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  nav ul li a:hover {
-    color: #a93a80;
-    transition: 0.3s;
-  }
-
-  nav ul li a i {
-    font-size: 24px;
-  }
-</style>

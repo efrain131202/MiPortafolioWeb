@@ -1,94 +1,25 @@
-<section class="text-image-section">
-    <div class="content">
-        <div class="text">
-            <h1>Bienvenido a mi portafolio</h1>
-            <p>
-                Soy <span>Efrain Cruz Lobato</span>, estudiante de la
+<section class="flex flex-col items-center p-5 pt-20">
+    <div class="flex flex-col items-center w-full md:flex-row md:justify-between">
+        <div class="w-full max-w-xl p-5 text-center text-white text-lg md:text-left">
+            <h1 class="text-2xl font-bold mb-4">Bienvenido a mi portafolio</h1>
+            <p class="mb-5">
+                Soy <span class="text-[#a93a80]">Efrain Cruz Lobato</span>, estudiante de la
                 Universidad Tecnológica de Tlaxcala de la carrera de Desarrollo
                 y Gestión de Software. En este portafolio, encontrarás
                 información sobre mi experiencia y conocimientos.
             </p>
             <a
-                class="download-button"
+                class="inline-block bg-white text-black text-lg py-2 px-5 rounded transition-colors duration-300 hover:bg-[#a93a80]"
                 href="/Curriculum_Vitae_EfrainCruzLobato.pdf"
                 download
                 id="downloadCVBtn">Descargar CV</a
             >
         </div>
-        <div class="image">
-            <img src="/color-scheme-right.svg" alt="Descripción de la imagen" />
+        <div class="w-full max-w-xl p-5 text-center md:text-left">
+            <img src="/color-scheme-right.svg" alt="Descripción de la imagen" class="max-w-full h-auto pr-12"/>
         </div>
     </div>
 </section>
-
-<style>
-    .text-image-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        padding-top: 75px;
-    }
-
-    .download-button {
-        display: inline-block;
-        background-color: white;
-        color: black;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        margin-top: 20px;
-        transition: background-color 0.3s;
-        cursor: pointer;
-        font-family: "Madimi One", sans-serif;
-    }
-
-    .download-button:hover {
-        background-color: #a93a80;
-        transition: 0.3s;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .text {
-        width: 100%;
-        max-width: 600px;
-        padding: 20px;
-        text-align: center;
-        color: white;
-        font-size: 20px;
-    }
-
-    span {
-        color: #a93a80;
-    }
-    .image {
-        width: 100%;
-        max-width: 600px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .image img {
-        max-width: 100%;
-        height: auto;
-        padding-right: 50px;
-    }
-    @media (min-width: 768px) {
-        .content {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .text,
-        .image {
-            text-align: left;
-        }
-    }
-</style>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {

@@ -1,26 +1,26 @@
-<footer>
-    <section class="redes-sociales">
-        <div class="contenedor">
+<footer class="text-white py-5">
+    <section class="py-5">
+        <div class="flex justify-center flex-wrap gap-4">
             <a
-                class="facebook"
+                class="facebook text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl transition-colors duration-300 hover:bg-[#3b5998]"
                 href="https://www.facebook.com/efrain.cruzlobato.9"
             >
                 <i class="fa fa-facebook"></i>
             </a>
             <a
-                class="whatsapp"
+                class="whatsapp text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl transition-colors duration-300 hover:bg-[#25d366]"
                 href="https://api.whatsapp.com/send?phone=2411681568"
             >
                 <i class="fa fa-whatsapp"></i>
             </a>
             <a
-                class="instagram"
+                class="instagram text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl transition-colors duration-300 hover:bg-[radial-gradient(circle_at_30%_107%,#fdf497_0%,#fdf497_5%,#fd5949_45%,#d6249f_60%,#285aeb_90%)]"
                 href="https://instagram.com/efraincruzlobato._.13?igshid=ZDdkNTZiNTM="
             >
                 <i class="fa fa-instagram"></i>
             </a>
             <a
-                class="Linkedin"
+                class="linkedin text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl transition-colors duration-300 hover:bg-[#5d7fc9]"
                 href="https://www.linkedin.com/in/efrain-cruz-lobato-908a5b2a8/"
             >
                 <i class="fa-brands fa-linkedin"></i>
@@ -28,7 +28,7 @@
         </div>
     </section>
     <section>
-        <div class="copyright">
+        <div class="text-center text-white mb-4 mx-8">
             <p>
                 &copy; <span id="year"></span> Efrain Cruz Lobato. Todos los derechos
                 reservados.
@@ -37,78 +37,8 @@
     </section>
 </footer>
 
-<style>
-    footer {
-        color: white;
-        padding: 20px 0;
-    }
-
-    footer .redes-sociales {
-        padding: 20px 0;
-    }
-
-    footer .redes-sociales .contenedor {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    footer .redes-sociales a {
-        color: white;
-        text-align: center;
-        width: 60px;
-        display: block;
-        padding: 10px 0;
-        border-radius: 3px;
-        font-size: 24px;
-        margin: 10px;
-        transition: background 0.3s ease;
-    }
-
-    footer .redes-sociales .facebook:hover {
-        background: #3b5998;
-    }
-
-    footer .redes-sociales .Linkedin:hover {
-        background: #5d7fc9;
-    }
-    footer .redes-sociales .whatsapp:hover {
-        background: #25d366;
-    }
-    footer .redes-sociales .instagram:hover {
-        background: radial-gradient(
-            circle at 30% 107%,
-            #fdf497 0%,
-            #fdf497 5%,
-            #fd5949 45%,
-            #d6249f 60%,
-            #285aeb 90%
-        );
-    }
-    .copyright {
-        text-align: center;
-        color: white;
-        margin-bottom: 15px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    @media (max-width: 768px) {
-        footer .redes-sociales a {
-            width: 40px;
-            font-size: 20px;
-        }
-
-        footer .redes-sociales .contenedor {
-            align-items: center;
-        }
-    }
-</style>
-
 <script>
-    document.addEventListener("DOMContentLoaded", (event) => {
-        document.getElementById("year").textContent = new Date()
-            .getFullYear()
-            .toString();
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("year").textContent = new Date().getFullYear().toString();
     });
 </script>
