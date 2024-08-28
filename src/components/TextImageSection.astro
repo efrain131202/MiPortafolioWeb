@@ -1,30 +1,34 @@
-<section class="flex items-center justify-center min-h-screen p-5">
-  <div class="text-center max-w-4xl">
-    <img src="/color-scheme-right.svg" alt="Imagen de Portafolio" class="mx-auto mb-6 w-64 h-64 sm:w-96 sm:h-96 object-cover">
-
-    <h1 class="text-4xl sm:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#ec4899] to-[#6366f1]">
+<section
+  id="starfield"
+  class="relative flex items-center justify-center min-h-screen p-5 overflow-hidden"
+>
+  <canvas id="starfield-canvas" class="absolute inset-0 z-0"></canvas>
+  <div class="text-center max-w-4xl relative z-10">
+    <img
+      src="/color-scheme-right.svg"
+      alt="Imagen de Portafolio"
+      class="mx-auto mb-6 w-64 h-64 sm:w-96 sm:h-96 object-cover"
+    />
+    <h1
+      class="text-4xl sm:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#ec4899] to-[#6366f1]"
+    >
       Bienvenido a mi portafolio
     </h1>
-    <p class="text-3xl sm:text-5xl mt-4 bg-clip-text text-transparent bg-gradient-to-r from-[#ec4899] to-[#6366f1]">
+    <p
+      class="text-3xl sm:text-5xl mt-4 bg-clip-text text-transparent bg-gradient-to-r from-[#ec4899] to-[#6366f1]"
+    >
       Soy Efrain Cruz Lobato. ¡Explora mi trabajo!
     </p>
     <a
       class="inline-block mt-10 bg-white text-black text-xl sm:text-2xl py-3 px-6 rounded transition-all duration-300 hover:bg-gradient-to-r hover:from-[#ec4899] hover:to-[#6366f1] hover:text-white"
       href="/Curriculum_Vitae_EfrainCruzLobato.pdf"
       download
-      id="downloadCVBtn">Descargar CV</a>
+      id="downloadCVBtn">Descargar CV</a
+    >
   </div>
 </section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const downloadBtn = document.getElementById("downloadCVBtn");
-
-    downloadBtn.addEventListener("click", function (event) {
-      const downloadLink = "/Curriculum_Vitae_EfrainCruzLobato.pdf";
-      window.location.href = downloadLink;
-
-      event.preventDefault();
-    });
-  });
+<script type="module">
+  import "/src/scripts/downloadCV.js";
+  import "/src/scripts/starfield.js";
 </script>
