@@ -1,0 +1,69 @@
+---
+import { cards } from "../components/data/cards.js";
+---
+
+<section id="starfield" class="min-h-screen flex items-center justify-center">
+    <canvas id="starfield-canvas" class="absolute inset-0 z-0"></canvas>
+    <div class="container max-w-4xl mx-auto px-4 py-8">
+        <div class="flex justify-center mb-10">
+            <img
+                src="/images/SolarUfo3Linear.svg"
+                alt="Descripción de la imagen"
+                class="w-24 h-24 rounded-full"
+                id="UFO"
+            />
+        </div>
+        <p
+            class="text-3xl sm:text-5xl mt-4 bg-clip-text text-transparent bg-gradient-to-r from-[#ec4899] to-[#0284c7] text-center"
+        >
+            ¡Explora mi trabajo!
+        </p>
+        <p class="text-lg sm:text-xl mt-4 text-gray-200 text-center">
+            Mis tecnologías.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            {
+                cards.map((card) => (
+                    <div class="p-4 border border-[#0284c7] rounded bg-transparent">
+                        <div class="flex items-center justify-center mb-2">
+                            <img
+                                src={card.imageSrc}
+                                alt={card.title}
+                                class="w-10 h-10"
+                            />
+                        </div>
+                        <h2 class="text-lg text-gray-100 text-center">
+                            {card.title}
+                        </h2>
+                        <p class="text-sm text-gray-400 text-center mt-2">
+                            {card.description}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    @keyframes float {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(0, 30px, 0);
+        }
+    }
+
+    #UFO {
+        animation: float linear 2.5s infinite alternate;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #UFO {
+            animation: none;
+        }
+    }
+</style>
