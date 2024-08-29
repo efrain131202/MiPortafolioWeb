@@ -1,5 +1,5 @@
 ---
-import { cards, bio } from "../scripts/cards.js";
+import { cards, bio, extra, intro } from "../scripts/cards.js";
 ---
 
 <div class="container mx-auto px-4 py-8 text-white">
@@ -10,12 +10,31 @@ import { cards, bio } from "../scripts/cards.js";
     </p>
   </div>
 
+  <div class="flex justify-center flex-wrap gap-4 mb-8">
+    {
+      cards.map((card) => (
+        <div class="flex items-center space-x-2 px-4 py-2 bg-transparent border border-[#0284c7] rounded-full">
+          <img src={card.imageSrc} alt={card.title} class="w-6 h-6" />
+          <span class="text-xs font-medium">{card.title}</span>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="text-center mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Complementos</h2>
+    <p class="text-base max-w-xl mx-auto">
+      {intro}
+    </p>
+  </div>
+
   <div class="flex justify-center flex-wrap gap-4">
-    {cards.map((card) => (
-      <div class="flex items-center space-x-2 px-4 py-2 bg-transparent border border-[#0284c7] rounded-full">
-        <img src={card.imageSrc} alt={card.title} class="w-6 h-6" />
-        <span class="text-xs font-medium">{card.title}</span>
-      </div>
-    ))}
+    {
+      extra.map((item) => (
+        <div class="flex items-center space-x-2 px-4 py-2 bg-transparent border border-[#0284c7] rounded-full">
+          <img src={item.imageSrc} alt={item.title} class="w-6 h-6" />
+        </div>
+      ))
+    }
   </div>
 </div>
