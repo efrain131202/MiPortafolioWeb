@@ -1,3 +1,24 @@
+export const bio = `
+Soy Efraín Cruz Lobato, ingeniero en Desarrollo y Gestión de Software graduado de la Universidad Tecnológica de Tlaxcala. Tengo experiencia en el desarrollo multiplataforma utilizando Dart y Flutter, así como en desarrollo web usando Astro, HTML, CSS, Tailwind, Node.js y JavaScript. Además, estoy familiarizado con herramientas de gestión de proyectos, asegurando una ejecución organizada. Estoy comprometido con la excelencia en el desarrollo de software y busco constantemente mejorar mis habilidades.`;
+
+export const intro = `
+    Además de mis habilidades principales, también tengo conocimientos en OSINT, Ciberseguridad Básica, y Gestión de Software, que refuerzan mi perfil profesional.`;
+
+export const extra = [
+    {
+        title: "OSINT",
+        imageSrc: "/Icons/HugeiconsComputerCloud.svg",
+    },
+    {
+        title: "Ciberseguridad Básica",
+        imageSrc: "/Icons/HugeiconsComputerProtection.svg",
+    },
+    {
+        title: "Gestión de Software",
+        imageSrc: "/Icons/HugeiconsComputerProgramming02.svg",
+    }
+];
+
 export const cards = [
     {
         title: "Flutter",
@@ -20,31 +41,6 @@ export const cards = [
         imageSrc: "/Icons/MdiTailwind.svg",
     }
 ];
-
-export const bio = `
-Soy Efraín Cruz Lobato, ingeniero en Desarrollo y Gestión de Software graduado de la Universidad Tecnológica de Tlaxcala. Tengo experiencia en el desarrollo multiplataforma utilizando Dart y Flutter, así como en desarrollo web usando Astro, HTML, CSS, Tailwind, Node.js y JavaScript. Además, estoy familiarizado con herramientas de gestión de proyectos, asegurando una ejecución organizada. Estoy comprometido con la excelencia en el desarrollo de software y busco constantemente mejorar mis habilidades.
-`;
-
-export const intro = `
-    Además de mis habilidades principales, también tengo conocimientos en OSINT, Ciberseguridad Básica, y Gestión de Software, que refuerzan mi perfil profesional.
-`;
-
-export const extra = [
-    {
-        title: "OSINT",
-        imageSrc: "/Icons/HugeiconsComputerCloud.svg",
-    },
-    {
-        title: "Ciberseguridad Básica",
-        imageSrc: "/Icons/HugeiconsComputerProtection.svg",
-    },
-    {
-        title: "Gestión de Software",
-        imageSrc: "/Icons/HugeiconsComputerProgramming02.svg",
-    }
-];
-
-
 
 export const projects = [
     {
