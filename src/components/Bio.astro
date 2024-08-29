@@ -1,0 +1,21 @@
+---
+import { cards, bio } from "../scripts/cards.js";
+---
+
+<div class="container mx-auto px-4 py-8 text-white">
+  <div class="text-center mb-8">
+    <h1 class="text-2xl font-bold mb-4">Descubre más sobre mí</h1>
+    <p class="text-base max-w-2xl mx-auto">
+      {bio}
+    </p>
+  </div>
+
+  <div class="flex justify-center flex-wrap gap-4">
+    {cards.map((card) => (
+      <div class="flex items-center space-x-2 px-4 py-2 bg-transparent border border-[#0284c7] rounded-full">
+        <img src={card.imageSrc} alt={card.title} class="w-6 h-6" />
+        <span class="text-xs font-medium">{card.title}</span>
+      </div>
+    ))}
+  </div>
+</div>
