@@ -47,47 +47,47 @@ export const projects = [
         title: "Telmex_App",
         description: "App para visualizar datos de Excel",
         technologies: "Dart, Flutter",
-        imageSrc: "/images/telmex_app.png"
+        imageSrc: "/proyects/250shots_so.png"
     },
     {
         title: "Telegram_Bot_Telmex",
         description: "Bot para consultas desde Excel",
         technologies: "Node.js, JavaScript",
-        imageSrc: "/images/telegram_bot_telmex.png"
+        imageSrc: "/proyects/203shots_so.png"
     },
     {
         title: "Vial-Solutions",
         description: "Landing page de una app",
         technologies: "Astro, HTML, Tailwind, JavaScript",
-        imageSrc: "/images/vial_solutions.png",
+        imageSrc: "/proyects/693shots_so.png",
         website: "https://vialsolutions.netlify.app/"
     },
     {
         title: "Hotel Boutique Alqueria Central",
         description: "Landing page de Hotel",
         technologies: "Astro, HTML, CSS, JavaScript",
-        imageSrc: "/images/alqueria_central.png",
-        website: "https://667c61ea6a1f7f000860cebb--alqueriacentral.netlify.app/"
+        imageSrc: "/proyects/691shots_so.png",
+        website: "https://alqueriacentral.netlify.app/"
     },
     {
         title: "Tlaxco de mi Corazón",
         description: "Landing page de un restaurante",
         technologies: "Astro, HTML, CSS, JavaScript",
-        imageSrc: "/images/tlaxco_corazon.png",
+        imageSrc: "/proyects/78shots_so.png",
         website: "https://tlaxco-de-mi-corazon.netlify.app/"
     },
     {
         title: "Electronic Ecommerce Landing Page",
         description: "Landing page de una Ecommerce",
         technologies: "Astro, React.js, HTML, Tailwind",
-        imageSrc: "/images/electronic_ecommerce.png",
+        imageSrc: "/proyects/684shots_so.png",
         website: "https://electronic-ecommerce-landig-page.netlify.app/"
     },
     {
         title: "Cafe Negro Que Me Alegro",
         description: "Landing page de un restaurante",
         technologies: "HTML, CSS, JavaScript",
-        imageSrc: "/images/cafe_negro.png",
+        imageSrc: "/proyects/417shots_so.png",
         website: "https://cafe-negro-que-me-alegro.netlify.app/"
     }
 ];

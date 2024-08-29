@@ -1,0 +1,32 @@
+---
+import { projects } from "../scripts/cards.js";
+---
+
+<div class="container mx-auto px-4 py-8 text-white">
+  <div class="text-center mb-8">
+    <h1 class="text-2xl font-bold mb-4">Mis Proyectos</h1>
+    <p class="text-base max-w-2xl mx-auto">
+      Aquí puedes ver algunos de los proyectos en los que he trabajado recientemente.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {
+      projects.map((project) => (
+        <div class="bg-transparent border border-[#0284c7] rounded-lg overflow-hidden shadow-lg">
+          <img src={project.imageSrc} alt={project.title} class="w-full  object-cover" />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">{project.title}</h2>
+            <p class="text-sm text-gray-300 mb-2">{project.description}</p>
+            <p class="text-xs text-gray-400 mb-4">Tecnologías: {project.technologies}</p>
+            {project.website && (
+              <a href={project.website} target="_blank" rel="noopener noreferrer" class="inline-block bg-[#0284c7] text-white px-3 py-1 rounded-full transition-all duration-300 hover:bg-[#026aa7]">
+                Visitar Sitio Web
+              </a>
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
