@@ -20,9 +20,10 @@ import { projects } from "../scripts/cards.js";
             <p class="text-sm text-gray-300 mb-2">{project.description}</p>
             <p class="text-xs text-gray-400 mb-4">Tecnologías: {project.technologies}</p>
             {project.website && (
-              <a href={project.website} target="_blank" rel="noopener noreferrer" class="inline-block bg-[#0284c7] text-white px-3 py-1 rounded-full transition-all duration-300 hover:bg-[#026aa7]">
-                Visitar Sitio Web
+              <a href={project.website} target="_blank" rel="noopener noreferrer" class="inline-block bg-transparent text-white border-2 border-white px-3 py-1 rounded-full transition-all duration-300 hover:text-[#0284c7] hover:border-[#0284c7] active:bg-[#0284c7] active:text-white active:inset-0 active:shadow-inner">
+              Visitar Sitio Web
               </a>
+
             )}
           </div>
         </div>
