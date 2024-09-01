@@ -1,19 +1,16 @@
+---
+import { footerLinks } from '../scripts/cards.js';
+---
+
 <footer class="text-white py-5 bg-cover bg-center relative" style="background-image: url('/images/moon.jpg');">
     <div class="absolute inset-0 bg-black opacity-60"></div>
     <section class="py-5 relative z-10">
         <div class="flex justify-center flex-wrap gap-4">
-            <a class="whatsapp text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl border-2 border-transparent transition-colors duration-300 hover:border-[#0284c7] hover:text-[#0284c7]" href="https://api.whatsapp.com/send?phone=2411681568" aria-label="Enviar mensaje por WhatsApp">
-                <img src="/Icons/Whatsapp.svg" alt="WhatsApp" class="w-8 h-8">
-            </a>
-            <a class="linkedin text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl border-2 border-transparent transition-colors duration-300 hover:border-[#0284c7] hover:text-[#0284c7]" href="https://www.linkedin.com/in/efrain-cruz-lobato-908a5b2a8/" aria-label="Perfil de LinkedIn">
-                <img src="/Icons/Linkedin.svg" alt="LinkedIn" class="w-8 h-8">
-            </a>
-            <a class="github text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl border-2 border-transparent transition-colors duration-300 hover:border-[#0284c7] hover:text-[#0284c7]" href="https://github.com/efrain131202" aria-label="Repositorio en GitHub" target="_blank">
-                <img src="/Icons/Github.svg" alt="GitHub" class="w-8 h-8">
-            </a>
-            <a class="gmail text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl border-2 border-transparent transition-colors duration-300 hover:border-[#0284c7] hover:text-[#0284c7]" href="mailto:efraincruzlobato13@gmail.com" aria-label="Enviar correo a Gmail">
-                <img src="/Icons/Gmail.svg" alt="Gmail" class="w-8 h-8">
-            </a>
+            {footerLinks.map(link => (
+              <a class="text-white w-16 h-16 flex items-center justify-center rounded-xl text-2xl border-2 border-transparent transition-colors duration-300 hover:border-[#0284c7] hover:text-[#0284c7]" href={link.url} aria-label={link.ariaLabel} target="_blank" rel="noopener noreferrer">
+                <img src={link.icon} alt={link.name} class="w-8 h-8" />
+              </a>
+            ))}
         </div>
     </section>
     <section class="relative z-10">
@@ -25,6 +22,7 @@
         </div>
     </section>
 </footer>
+
 
 <script>
     import "/src/scripts/currentYear.js";

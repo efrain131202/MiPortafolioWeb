@@ -91,3 +91,30 @@ export const projects = [
         website: "https://cafe-negro-que-me-alegro.netlify.app/"
     }
 ];
+
+export const footerLinks = [
+    {
+        name: "WhatsApp",
+        url: "https://api.whatsapp.com/send?phone=2411681568",
+        icon: "/Icons/Whatsapp.svg",
+        ariaLabel: "Enviar mensaje por WhatsApp",
+    },
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/efrain-cruz-lobato-908a5b2a8/",
+        icon: "/Icons/Linkedin.svg",
+        ariaLabel: "Perfil de LinkedIn",
+    },
+    {
+        name: "GitHub",
+        url: "https://github.com/efrain131202",
+        icon: "/Icons/Github.svg",
+        ariaLabel: "Repositorio en GitHub",
+    },
+    {
+        name: "Gmail",
+        url: "mailto:efraincruzlobato13@gmail.com",
+        icon: "/Icons/Gmail.svg",
+        ariaLabel: "Enviar correo a Gmail",
+    },
+];

@@ -11,19 +11,21 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#000000" />
 		<link rel="icon" type="image/svg+xml" href="/images/astronaut.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body class="bg-black">
-		<canvas id="starfield-canvas" class="fixed inset-0 z-0"></canvas>
+		<canvas id="starfield-canvas" class="fixed inset-0 z-0 w-full h-full"
+		></canvas>
 		<div class="relative z-10">
 			<slot />
 		</div>
 	</body>
 </html>
+
 <style is:global>
 	@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap");
 	html {
