@@ -82,13 +82,6 @@ export const projects = [
         technologies: "Astro, React.js, HTML, Tailwind",
         imageSrc: "/proyects/684shots_so.png",
         website: "https://electronic-ecommerce-landig-page.netlify.app/"
-    },
-    {
-        title: "Cafe Negro Que Me Alegro",
-        description: "Landing page de un restaurante",
-        technologies: "HTML, CSS, JavaScript",
-        imageSrc: "/proyects/417shots_so.png",
-        website: "https://cafe-negro-que-me-alegro.netlify.app/"
     }
 ];
 
