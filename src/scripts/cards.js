@@ -1,8 +1,14 @@
 export const bio = `
-Soy Efraín Cruz Lobato, ingeniero en Desarrollo y Gestión de Software graduado de la Universidad Tecnológica de Tlaxcala. Tengo experiencia en el desarrollo multiplataforma utilizando Dart y Flutter, así como en desarrollo web usando Astro, HTML, CSS, Tailwind, Node.js y JavaScript. Además, estoy familiarizado con herramientas de gestión de proyectos, asegurando una ejecución organizada. Estoy comprometido con la excelencia en el desarrollo de software y busco constantemente mejorar mis habilidades.`;
+Soy Efraín Cruz Lobato, Ingeniero en desarrollo y gestión de software con experiencia en tecnologías como Java, Dart y JavaScript. Especialista en 
+creación de módulos con frameworks como Spring Boot, Hibernate, Flutter, React y Astro, y en diseño de interfaces con 
+herramientas como Tailwind CSS y Bootstrap para aplicaciones web modernas y responsivas.`;
 
 export const intro = `
-    Además de mis habilidades principales, también tengo conocimientos en OSINT, Ciberseguridad Básica, y Gestión de Software, que refuerzan mi perfil profesional.`;
+    He participado en todas las fases del ciclo de desarrollo de software: levantamiento de requerimientos (ERS-IEEE830), 
+análisis (diagramas y modelos como Casos de Uso, Secuencia, ER, etc.), y planeación detallada. Manejo control de 
+versiones con Git y GitBash, y diseño de interfaces con Figma y Balsamiq. Cuento con conocimientos básicos en ciberseguridad, incluyendo prácticas para proteger aplicaciones y datos, y experiencia 
+en OSINT para obtención de datos publicos. Combino habilidades técnicas y un enfoque meticuloso en cada etapa del 
+desarrollo para garantizar soluciones eficientes, seguras y de alta calidad.`;
 
 export const extra = [
     {
@@ -21,12 +27,36 @@ export const extra = [
 
 export const cards = [
     {
+        title: "Java",
+        imageSrc: "/Icons/DeviconPlainJava.svg",
+    },
+    {
+        title: "Dart",
+        imageSrc: "/Icons/SimpleIconsDart.svg",
+    },
+    {
+        title: "JavaScript",
+        imageSrc: "/Icons/CiJavascript.svg",
+    },
+    {
+        title: "TypeScript",
+        imageSrc: "/Icons/AkarIconsTypescriptFill.svg",
+    },
+    {
         title: "Flutter",
         imageSrc: "/Icons/MaterialSymbolsFlutter.svg",
     },
     {
+        title: "Spring Boot",
+        imageSrc: "/Icons/DeviconPlainSpring.svg",
+    },
+    {
         title: "Astro",
         imageSrc: "/Icons/SimpleIconsAstro.svg",
+    },
+    {
+        title: "React.js",
+        imageSrc: "/Icons/MdiReact.svg",
     },
     {
         title: "Git",
@@ -43,6 +73,13 @@ export const cards = [
 ];
 
 export const projects = [
+    {
+        title: "Java Glaxy",
+        description: "Blog de Java",
+        technologies: "Astro, HTML, Tailwind, TypeScript, JavaScript",
+        imageSrc: "/proyects/643shots_so.png",
+        website: "https://java-galaxy.netlify.app/"
+    },
     {
         title: "Telmex_App",
         description: "App para visualizar datos de Excel",
@@ -63,11 +100,17 @@ export const projects = [
         website: "https://vialsolutions.netlify.app/"
     },
     {
-        title: "Hotel Boutique Alqueria Central",
-        description: "Landing page de Hotel",
-        technologies: "Astro, HTML, CSS, JavaScript",
-        imageSrc: "/proyects/691shots_so.png",
-        website: "https://alqueriacentral.netlify.app/"
+        title: "Vial-Solutions Dashboard",
+        description: "Dashboard de una app",
+        technologies: "Dart, Flutter, Firebase",
+        imageSrc: "/proyects/453shots_so.png"
+    },
+    {
+        title: "Electronic Ecommerce Landing Page",
+        description: "Landing page de una Ecommerce",
+        technologies: "Astro, React.js, HTML, Tailwind",
+        imageSrc: "/proyects/684shots_so.png",
+        website: "https://electronic-ecommerce-landig-page.netlify.app/"
     },
     {
         title: "Tlaxco de mi Corazón",
@@ -76,13 +119,6 @@ export const projects = [
         imageSrc: "/proyects/78shots_so.png",
         website: "https://tlaxco-de-mi-corazon.netlify.app/"
     },
-    {
-        title: "Electronic Ecommerce Landing Page",
-        description: "Landing page de una Ecommerce",
-        technologies: "Astro, React.js, HTML, Tailwind",
-        imageSrc: "/proyects/684shots_so.png",
-        website: "https://electronic-ecommerce-landig-page.netlify.app/"
-    }
 ];
 
 export const footerLinks = [
